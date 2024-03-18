@@ -1,0 +1,52 @@
+.table {
+  padding: 1rem;
+  text-align: center;
+  border-collapse: collapse;
+  max-width: 500px;
+  width: 100%;
+}
+
+.table td {
+  padding: 0.5rem;
+  vertical-align: middle;
+}
+
+.table thead th,
+.table tfoot td {
+  padding: 1rem;
+}
+
+.table tr td:first-child,
+.table tr th:first-child {
+  border-right: 3px double rgb(214, 129, 129);
+}
+
+.table tr {
+  border-bottom: 1px solid #bcbcbc;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.taskInput {
+  background: transparent;
+  border: none;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.taskInput:focus {
+  outline: none;
+  border: none;
+}
+
+.taskInput:disabled {
+  opacity: 0.5;
+}
+
+.createInput {
+  width: 100%;
+}

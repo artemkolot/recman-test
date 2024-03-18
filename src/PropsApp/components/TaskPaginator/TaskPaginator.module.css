@@ -1,0 +1,35 @@
+.navigate {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.navigateButton {
+  border: none;
+  background: #f0f0ef;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  gap: 5px;
+  padding: 5px 10px;
+}
+
+.navigateButton:disabled {
+  background: transparent;
+  opacity: 0.5;
+}
+
+.navigateButton:not(:disabled):hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.navigateButton:not(:disabled):active {
+  transform: scale(0.9);
+  background: #ccc;
+  color: #fff;
+}
