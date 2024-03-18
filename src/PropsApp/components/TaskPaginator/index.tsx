@@ -4,8 +4,8 @@ import { faCircleLeft, faCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { FC } from "react";
 
 const TaskPaginator: FC<{
-  next: any;
-  prev: any;
+  next: () => void;
+  prev: () => void;
   page: number;
   total: number;
 }> = ({ next, prev, page, total }) => {

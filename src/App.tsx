@@ -1,14 +1,7 @@
 import { CSSProperties } from "react";
 import Todo from "./PropsApp/components/Todo";
 import RedaxApp from "./RedaxApp";
-import {
-  BrowserRouter,
-  Link,
-  NavLink,
-  Navigate,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter, Link, Navigate, Route, Routes } from "react-router-dom";
 import { Stack } from "@mui/material";
 
 const styles: CSSProperties = {

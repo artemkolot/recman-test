@@ -20,7 +20,7 @@ import {
 } from "@mui/material";
 
 import EditIcon from "@mui/icons-material/Edit";
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 
 const TodoList = () => {
   const tasks = useTasks();

@@ -1,5 +1,5 @@
 import { FC, useMemo, useState } from "react";
-import { NewTask, Task } from "../Todo";
+import { NewTask, Task, Tasks } from "../Todo";
 import Styles from "./TaskList.module.css";
 import TaskPaginator from "../TaskPaginator";
 import PaginatedList from "./PaginatedList";
@@ -16,7 +16,7 @@ export type TaskActions = {
 };
 
 const TaskList: FC<{
-  tasks: any[];
+  tasks: Tasks;
   actions: TaskActions;
 }> = ({ tasks, actions }) => {
   const [filter, setFilter] = useState<Booleanish | string>("");
